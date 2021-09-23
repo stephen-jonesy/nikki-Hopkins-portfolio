@@ -1,0 +1,44 @@
+.active-lightbox {
+
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .image-background {
+        height: 100%;
+        width: 100%;
+        background: $primary;
+        opacity: 90%;
+        pointer-events: none
+        
+    }
+    
+    .image-container {
+        position: fixed;
+        height: auto;
+        width: auto;
+    
+        background: #FFFFFF;
+        border-radius: 5px;
+        opacity: 100%;
+        z-index: 1000;
+        padding: 4px;
+        pointer-events: none; 
+
+    
+        img {
+            max-height: 600px;
+            // height: 600px;
+            // width: auto;
+        }
+    
+    
+    }
+
+}

@@ -1,0 +1,108 @@
+
+#single-wrapper {
+    padding-top: 0;
+}
+
+.banner {
+    position: relative;
+    background: #252424;
+    height: 169px;    
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+        width: 1140px;
+        max-width: 1140px;
+        margin: auto;
+        color: white;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.2em;
+        padding-right: 15px;
+        padding-left: 15px;
+        z-index: 10;
+    }
+}
+
+.banner-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 462px;
+    //background-image: url("../images/HR PRODUCTION/PS/21.55.16.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.banner-image-overlay {
+    position: absolute;
+    height: 100%;
+    width: 462px;
+    top: 0;
+    right: 0;
+
+    background: linear-gradient(90deg, #252424 0%, rgba(37, 36, 36, 0.729167) 40.03%, rgba(255, 255, 255, 0) 147.81%);
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .banner {
+        h1 {
+            max-width: 960px;
+
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 991px) {
+
+    .banner {
+        h1 {
+            max-width: 720px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    .banner {
+        h1 {
+            max-width: 540px        }
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    .banner {
+        h1 {
+            padding-left: 0;
+        
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+
+    .banner {
+        h1 {
+            max-width: none;
+            padding-left: 15px;
+        
+        }
+    }
+    
+}
+
+
+
+

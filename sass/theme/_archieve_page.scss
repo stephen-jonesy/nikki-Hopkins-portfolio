@@ -1,0 +1,110 @@
+
+#archive-wrapper {
+    
+    min-height: 90vh;
+
+    #main {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    h2 {
+
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.4em;
+        margin-bottom: 20px;
+
+    }
+
+    .posts-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+    }
+    
+    .card-container {
+        position: relative;
+        height: 500px;
+        margin: 5px;
+        
+        &:hover .feature-image { 
+            transform: scale(1.08); 
+            overflow: hidden;
+            -webkit-filter: brightness(70%);
+
+        }
+    
+    }
+
+    .image-title {
+        position: absolute;
+        padding-left: 40px;
+        top: -5%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2em;
+        z-index: 10;
+        pointer-events: none;
+
+        color: #FFFFFF;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+
+    .feature-image {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        -webkit-filter: brightness(100%);
+
+
+        background-size: cover;
+        transition: all .5s ease-in-out;
+
+    }
+
+    .image-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #272626 0%, rgba(39, 38, 38, 0.729167) 30.02%, rgba(166, 166, 166, 0.300245) 147.79%, rgba(255, 255, 255, 0) 147.81%);
+        pointer-events: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+
+    @media only screen and (max-width: 991px) {
+
+        .image-title {
+            padding-left: 20px;
+        }
+
+
+    }
+}

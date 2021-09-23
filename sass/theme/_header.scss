@@ -1,0 +1,116 @@
+
+
+.navbar-custom {
+    .navbar-brand {
+        color: $primary;
+        font-size: 30px;
+        font-weight: 300;
+    
+        @include hover-focus() {
+          color: $secondary;
+          .logo-line {
+            border-left: 1px solid $secondary;
+
+          }
+        }
+
+        .logo-line{
+            width: 10px;
+            height: 1px;
+
+            border-left: 1px solid $primary;
+            transform: rotate(90deg);
+            margin: 0 6px;
+            
+        }
+
+        span {
+            font-weight: 200;
+
+        }
+
+
+    }
+
+    .navbar-nav {
+        
+        .nav-link {
+            color: $secondary;
+            font-size: 18px;
+            font-weight: 500;
+
+
+      
+            @include hover-focus() {
+              color: $primary;
+            }
+      
+            
+        }
+        
+
+        .show > .nav-link,
+        .active > .nav-link,
+        .nav-link.show,
+        .nav-link.active {
+          color: $active;
+      
+        }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("../images/bars-solid.svg");
+      ;
+    }
+    
+
+    @media only screen and (max-width: 991px) {
+      .navbar-nav {
+        
+        .nav-link {
+          font-size: 14px;
+
+        }
+      }
+      .nav-link {
+        font-size: 16px;
+
+      }
+
+      // .container {
+      //     max-width: unset;
+      // }
+
+
+
+    }
+
+    @media only screen and (max-width: 767px) {
+      .navbar-nav {
+        
+        .nav-link {
+          font-size: 18px;
+
+        }
+      }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+      .navbar-brand {
+        font-size: 20px;
+      
+      }
+      
+
+
+    }
+      
+
+
+
+
+
+  
+
+} 

@@ -1,0 +1,201 @@
+.front-page-wrapper {
+    min-height: 90vh;
+
+    .site-main {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+
+    }
+
+    a {
+    }
+
+    .card-container {
+        position: relative;
+        height: 460px;
+        width: 460px;
+        
+
+    }
+
+    .image-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+            &:hover {
+
+                button {
+                    -moz-transition: all 1s ease;
+                    -webkit-transition: all 1s ease;
+                    transition: all 1s ease;
+                    color: $third;
+                    
+                }
+                
+
+            }
+
+        button {
+            position: absolute;
+            bottom: 0;
+            margin: 40px;
+            border-radius: 0%;
+            border: none;
+            background-color: rgb(32, 30, 30);
+            pointer-events: none;
+        }
+
+
+    }
+
+    .image-card {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: $active;
+        transform: rotate(-6.09deg);
+        filter: drop-shadow(2px 2px 6px rgba(5, 5, 5, 0.54));
+        
+
+    }
+
+    #home-image-1 {
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/HR PHOTOGRAPHY/bwn.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        filter: drop-shadow(2px 2px 6px rgba(5, 5, 5, 0.6)) brightness(1);
+
+        
+        &:hover {
+            transform: scale(105%);
+            filter: drop-shadow(2px 2px 6px rgba(5, 5, 5, 0.54))  brightness(0.75);
+
+            
+        }
+
+        
+    }
+
+    #home-image-2 {
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/HR PRODUCTION/PS/paul-smith-2.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        filter: drop-shadow(2px 2px 6px rgba(5, 5, 5, 0.54)) brightness(1);
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+            transform: scale(105%);
+            filter: drop-shadow(2px 2px 6px rgba(5, 5, 5, 0.54)) brightness(0.85);
+
+        }
+
+
+        /*&:hover {
+            transform: scale(1.1);
+        }
+        */
+
+        
+    }
+    @media only screen and (max-width: 1200px) {
+        // .site-main {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+
+
+        .card-container {
+            height: 400px;
+            width: 400px;
+        }
+
+        // a {
+        //     margin: 40px;
+
+        // }
+
+        
+
+        
+
+    }
+
+    @media only screen and (max-width: 991px) {
+
+
+        .container {
+            max-width: unset;
+        }
+        .site-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .card-container {
+            height: 480px;
+            width: 480px;
+            margin-bottom: 70px;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .site-main {
+            display: flex;
+            flex-direction: column;
+            align-items: unset;
+            margin: 30px;
+
+
+        }
+
+        .card-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+    
+        }
+
+
+
+
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        .site-main {
+
+            margin: 0;
+
+
+        }
+
+        .card-container {
+            position: relative;
+            height: 300px;
+            
+    
+        }
+
+    }
+
+
+}

@@ -1,0 +1,100 @@
+.custom-page-wrapper {
+    min-height: 90vh;
+    
+    
+    .wpcf7-textarea {
+        height: 100px;
+
+    }
+
+    .btn-outline-primary, .wpcf7 input[type=submit] {
+        color: $active;
+        border-color: $active;
+    }
+
+    .wpcf7 input[type=submit]:hover {
+        background: $active;
+        color: white;
+
+    }
+
+    .wpcf7 textarea:focus {
+        border: 1px solid $active;
+        border-color: $active;
+        box-shadow: 0 0 0 0.2rem hsla(347, 77%, 49%, 0.2) ;
+    }
+
+    .wpcf7 input:focus {
+        border: 1px solid $active;
+        border-color: $active;
+        box-shadow: 0 0 0 0.2rem hsla(347, 77%, 49%, 0.2) ;
+    }
+    
+    .split-page-container {
+        height: 300px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    #main {
+        display: flex;
+        justify-content: space-evenly;
+
+        h1 {
+            color: gray;
+    
+        }
+
+        h2 {
+            font-weight: 100;
+            font-size: 22px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2em;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 28px;
+            
+            letter-spacing: 0.2em;
+            b {
+                font-weight: 300;
+
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        #main {
+            display: block;
+        }
+
+        .split-page-container {
+            all: unset;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            display: block;
+            h2 {
+                font-size: 5vw;
+    
+            }
+            p {
+                font-size: 3vw;
+
+            }
+        }
+
+
+    }
+    
+}
