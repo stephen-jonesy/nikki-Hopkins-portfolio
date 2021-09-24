@@ -1,6 +1,19 @@
 @import 'header', 'front_page', 'custom_page', 'archieve_page', 'single_page', 'footer', 'lightbox';
 
+.loader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    transition: all .5s;
+    opacity: 1;
+}
 
+.loader-disable {
+    opacity: 0;
+    pointer-events: none;
+}
 
 
 

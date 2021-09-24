@@ -7069,7 +7069,12 @@
     }, false);
   }
 })();
-// Add your custom JS here.
+window.addEventListener("load", () => {
+  const loader = document.querySelector('.loader');
+  loader.classList.add('loader-disable');
+  console.log('page has loaded');
+}); // Add your custom JS here.
+
 let clickableGallery = document.querySelector(".clickable-gallery"); //If it isn't "undefined" and it isn't "null", then it exists.
 
 let isActive = false;
