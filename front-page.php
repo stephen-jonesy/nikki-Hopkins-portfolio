@@ -22,7 +22,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper front-page-wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-		<!--<h1>I'm the homepage, Biatch!</h1> -->
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
